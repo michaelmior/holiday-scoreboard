@@ -59,6 +59,7 @@ class Scoreboard extends Component {
     restdb.get("/rest/scores")
       .then(res => {
         let scores = res.data;
+        scores.sort((a, b) => b.score - a.score);
         
         this.setState(previousState => {
           return { scores };
