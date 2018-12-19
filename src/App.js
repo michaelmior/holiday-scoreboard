@@ -4,6 +4,10 @@ import './App.css';
 import Scoreboard from './Scoreboard';
 
 class App extends Component {
+  componentDidMount() {
+    new require('magic-snowflakes')({color:'#eef'})
+  }
+
   render() {
     return (
       <Scoreboard/>
