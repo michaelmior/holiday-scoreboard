@@ -7,7 +7,7 @@ const apikey = process.env.REACT_APP_RESTDB_KEY;
 // REST endpoint
 let restdb = axios.create({
   baseURL: '/',
-  timeout: 1000,
+  timeout: 5000,
   headers: { 'x-apikey': apikey }
 });
 
