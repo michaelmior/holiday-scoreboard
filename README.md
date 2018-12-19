@@ -1,44 +1,28 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Holiday Scoreboard
 
-## Available Scripts
+This is a simple scoreboard for anyone who might be running some games over the holidays.
+Scores are fetched from a [restdb.io](https://restdb.io/) database and updated automatically.
+To run it yourself, create a restdb.io account and create a new database.
+Go to your new database in the web interface and turn on developer mode by clicking the gears in the top right.
+Then press the orange "Add Collection" button and create a collection named "scores".
+Select your new "scores" collection and click "Add Field" to create fields named "team" and "score" (change the type of "score" to number).
 
-In the project directory, you can run:
+With this done, you can click the gears again to turn off developer mode.
+The final step is to get an API key.
+Click Settings in the left menu and then select the API tab.
+Click "Add New" under "Web page API keys (CORS)".
+Enter anything you like for the description then check the box market "GET" under REST methods.
+Expand the "Real-time events" section and then in the textbox add "POST:*", "PUT:*", and "DELETE:*" pressing return after each one.
+Once this is done, copy the provided API key and in a file `.env.local` in the same directory as this repository, add a line `REACT_APP_RESTDB_KEY=<api key here>`.
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+With the setup complete, you can now run the scoreboard.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+    yarn start
 
-### `npm test`
+Note that CORS is not correctly configured so if you want to access the scoreboard from any other machine, you'll have to do the following.
+*This is dangerous* as it could potentially allow remote code execution so run at your own risk.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    DANGEROUSLY_DISABLE_HOST_CHECK=true yarn start
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Enjoy and happy holidays!
