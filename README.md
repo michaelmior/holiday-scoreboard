@@ -1,5 +1,7 @@
 # Holiday Scoreboard
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/michaelmior/holiday-scoreboard.svg?token=6f199bf91ea42b914176240cc286974aa772ba018acdec8446118b67d2f4d537&ts=1545224557851)](https://greenkeeper.io/)
+
 This is a simple scoreboard for anyone who might be running some games over the holidays.
 Scores are fetched from a [restdb.io](https://restdb.io/) database and updated automatically.
 
