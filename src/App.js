@@ -5,7 +5,8 @@ import Scoreboard from './Scoreboard';
 
 class App extends Component {
   componentDidMount() {
-    new require('magic-snowflakes')({color:'#eef'})
+    const Snowflakes = require('magic-snowflakes');
+    new Snowflakes({color:'#eef'})
   }
 
   render() {

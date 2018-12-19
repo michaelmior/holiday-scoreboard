@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import EventSource from 'eventsource';
 import FlipMove from 'react-flip-move';
 import { restdb, realtimeURL } from './helper.js';
 import './Scoreboard.css'
