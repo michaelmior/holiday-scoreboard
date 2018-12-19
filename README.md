@@ -3,6 +3,8 @@
 This is a simple scoreboard for anyone who might be running some games over the holidays.
 Scores are fetched from a [restdb.io](https://restdb.io/) database and updated automatically.
 
+Enjoy and happy holidays!
+
 ![Scoreboard demo animation](scoreboard.gif)
 
 ## Setup
@@ -32,4 +34,9 @@ Note that CORS is not correctly configured so if you want to access the scoreboa
 You can add/edit teams and scores from the restdb.io dashboard (it's rather mobile friendly).
 You'll see new teams appear and when scores change, there's a nice animation where the team slides into its new position based on the score.
 
-Enjoy and happy holidays!
+## Customizing
+
+Since this was built as a one-off project, there's no settings which can be easily configured, but there are a few things you may want to change.
+Replacing [`public/background.jpg`](public/background.jpg) will give you a new background image.
+Changing the first number in `grid-template-rows` in [`Scoreboard.css`](src/Scoreboard.css) will allow you to change the number of rows in each column.
+You can also edit the font size in the `.board` style and of course tweak anything else to your liking!
