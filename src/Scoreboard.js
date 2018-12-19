@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
+import FlipMove from 'react-flip-move';
 import { restdb, realtimeURL } from './helper.js';
+import './Scoreboard.css'
 
 class Scoreboard extends Component {
   constructor(props) {
@@ -70,9 +72,11 @@ class Scoreboard extends Component {
   }
 
   render() {
-    return this.state.scores.map(team =>
-      <div key={team._id}>{team.name} - {team.score}</div>
-    )
+    return <div className="board"><FlipMove>
+      {this.state.scores.map(team =>
+      <div key={team._id} className="row"><span className="name">{team.name}</span> <span className="score">{team.score}</span></div>
+      )}
+    </FlipMove></div>
   }
 }
 
