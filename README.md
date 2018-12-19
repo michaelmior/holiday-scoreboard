@@ -1,21 +1,20 @@
 # Holiday Scoreboard
 
-## Setup
-
 This is a simple scoreboard for anyone who might be running some games over the holidays.
 Scores are fetched from a [restdb.io](https://restdb.io/) database and updated automatically.
-To run it yourself, create a restdb.io account and create a new database.
-Go to your new database in the web interface and turn on developer mode by clicking the gears in the top right.
-Then press the orange "Add Collection" button and create a collection named "scores".
-Select your new "scores" collection and click "Add Field" to create fields named "team" and "score" (change the type of "score" to number).
 
-With this done, you can click the gears again to turn off developer mode.
-The final step is to get an API key.
-Click Settings in the left menu and then select the API tab.
-Click "Add New" under "Web page API keys (CORS)".
-Enter anything you like for the description then check the box market "GET" under REST methods.
-Expand the "Real-time events" section and then in the textbox add "POST:*", "PUT:*", and "DELETE:*" pressing return after each one.
-Once this is done, copy the provided API key and in a file `.env.local` in the same directory as this repository, add a line `REACT_APP_RESTDB_KEY=<api key here>`.
+## Setup
+
+1. Create a restdb.io account and create a new database
+2. Go to your new database in the web interface and turn on developer mode by clicking the gears in the top right
+3. Press the orange "Add Collection" button and create a collection named "scores"
+4. Select your new "scores" collection and click "Add Field" to create fields named "team" and "score" (change the type of "score" to number)
+5. Click Settings in the left menu and then select the API tab
+6. Click "Add New" under "Web page API keys (CORS)"
+7. Enter anything you like for the description
+8. Check the box market "GET" under REST methods
+9. Expand the "Real-time events" section and then in the textbox add "POST:*", "PUT:*", and "DELETE:*" pressing return after each one
+10. Copy the provided API key and in a file `.env.local` in the same directory as this repository, add a line `REACT_APP_RESTDB_KEY=<api key here>`
 
 ## Launching
 
