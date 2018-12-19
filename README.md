@@ -3,6 +3,8 @@
 This is a simple scoreboard for anyone who might be running some games over the holidays.
 Scores are fetched from a [restdb.io](https://restdb.io/) database and updated automatically.
 
+![Scoreboard demo animation](scoreboard.gif)
+
 ## Setup
 
 1. Create a restdb.io account and create a new database
