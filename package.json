@@ -8,7 +8,7 @@
     "eventsource": "^1.0.7",
     "magic-snowflakes": "^4.1.2",
     "react": "^16.6.3",
-    "react-dom": "^16.8.6",
+    "react-dom": "^16.10.1",
     "react-flip-move": "^3.0.3",
     "react-scripts": "2.1.1"
   },
