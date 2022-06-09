@@ -5,7 +5,7 @@
   "proxy": "https://scoreboard-ec2a.restdb.io",
   "dependencies": {
     "axios": "^0.18.1",
-    "eventsource": "^1.0.7",
+    "eventsource": "^1.1.1",
     "magic-snowflakes": "^4.2.0",
     "react": "^16.6.3",
     "react-dom": "^16.8.6",
